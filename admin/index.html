@@ -7,6 +7,21 @@
     <style>body{margin:0;font-family:system-ui,Segoe UI,Inter,Roboto}</style>
   </head>
   <body>
+    <!-- Decap CMS core -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <!-- Netlify Identity widget (required for invite/reset flows) -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      // After login, go back to /admin/
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', (user) => {
+          if (!user) {
+            window.netlifyIdentity.on('login', () => {
+              window.location.href = '/admin/';
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>
