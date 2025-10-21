@@ -1,32 +1,18 @@
 {
   "items": [
     {
-  "id": "PUBG-1001",
-  "title": "ЗАРНА ТУЛНА",
-  "category": "PUBG Account",
-  "login_method": "X",
-  "price": "MNT 450,000",
-  "images": [
-    "images/PUBG-1001-1.jpg",
-    "images/PUBG-1001-2.jpg"
-  ],
-  "contact": {
-    "messenger": "yourcrushkk",
-    "phone": "+97672028804"
-  }
-},
-    {
-      "id": "PUBG-1000",
-      "title": "PUBG — Sample",
+      "id": "PUBG-1001",
+      "title": "ЗАРНА ",
       "category": "PUBG Account",
-      "login_method": "Email login",
-      "price": "MNT 250,000",
+      "login_method": "X login",
+      "price": "MNT 450,000",
       "images": [
-        "images/pubg.png"
+        "images/PUBG-1001-1.jpg",
+        "images/PUBG-1001-2.jpg"
       ],
       "contact": {
-        "messenger": "360j",
-        "phone": "+97600000000"
+        "messenger": "yourcrushkk",
+        "phone": "+97672028804"
       }
     },
     {
@@ -69,23 +55,7 @@
       "contact": {
         "messenger": "360j",
         "phone": "+97600000000"
-      },
-      {
-  "id": "PUBG-0001",
-  "title": "DIAMOND",
-  "category": "PUBG Account",
-  "login_method": "X/EMAIL",
-  "price": "MNT 250,000",
-  "images": [
-    "images/PUBG-0001-1.png"
-  ],
-  "contact": {
-    "messenger": "https://www.facebook.com/yourCrushkk",
-    "phone": "+97672028804"
-  }
-}
-
-      
+      }
     }
   ]
 }
