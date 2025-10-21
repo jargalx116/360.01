@@ -54,7 +54,23 @@
       "contact": {
         "messenger": "360j",
         "phone": "+97600000000"
-      }
+      },
+      {
+  "id": "PUBG-0001",
+  "title": "DIAMOND",
+  "category": "PUBG Account",
+  "login_method": "X/EMAIL",
+  "price": "MNT 250,000",
+  "images": [
+    "images/PUBG-0001-1.png"
+  ],
+  "contact": {
+    "messenger": "https://www.facebook.com/yourCrushkk",
+    "phone": "+97672028804"
+  }
+}
+
+      
     }
   ]
 }
