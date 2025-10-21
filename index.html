@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>360j — Game Market</title>
+<title>360 — Game Market</title>
 <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.ico" sizes="any">
-<meta property="og:title" content="360j — Digital Game Accounts"/>
+<meta property="og:title" content="360 — Digital Game Accounts"/>
 <meta property="og:description" content="PUBG, ML, Steam, Standoff 2 accounts. Contact via Messenger."/>
 <meta property="og:type" content="website"/>
 <meta property="og:image" content="images/uploads/og-image.png"/>
@@ -83,20 +83,20 @@ dialog{border:none;border-radius:16px;padding:0;max-width:960px;width:92vw;backg
   <div class="container head">
     <div class="brand"><img src="logo360.jpg" alt="Logo"><strong>360j</strong></div>
     <nav class="nav"><a href="#catalog">Catalog</a><a href="#contact">Contact</a><a href="#about">About</a></nav>
-    <span class="note">No on-site payments • Contact seller directly</span>
+    <span class="note"> •  </span>
   </div>
 </header>
 
 <main class="container">
   <section class="hero">
-    <h1>Neon Gamer Catalog</h1>
-    <p>Tap a category to filter.</p>
+    <h1>Цахим тоглоомын аккоунт худалдаа</h1>
+    <p>Сонирхосон аккоунтынхаа кодыг админруу явуулж аккоунтаа худалдан аваарай.</p>
 
     <section id="categories" class="categories">
       <button class="cat" data-cat="PUBG Account"><span>PUBG Account</span><div class="imgwrap"><img src="images/pubg.png" alt="PUBG" onerror="this.src='images/uploads/pubg.png'"></div></button>
       <button class="cat" data-cat="ML account"><span>ML account</span><div class="imgwrap"><img src="images/mobilelegends.jpg" alt="ML" onerror="this.src='images/uploads/mobilelegends.jpg'"></div></button>
-      <button class="cat" data-cat="steam account"><span>steam account</span><div class="imgwrap"><img src="images/steam.png" alt="Steam" onerror="this.src='images/uploads/steam.png'"></div></button>
-      <button class="cat" data-cat="standoff 2 account"><span>standoff 2 account</span><div class="imgwrap"><img src="images/standoff2.png" alt="SO2" onerror="this.src='images/uploads/standoff2.png'"></div></button>
+      <button class="cat" data-cat="Steam account"><span>Steam account</span><div class="imgwrap"><img src="images/steam.png" alt="Steam" onerror="this.src='images/uploads/steam.png'"></div></button>
+      <button class="cat" data-cat="Standoff 2 account"><span>Standoff 2 account</span><div class="imgwrap"><img src="images/standoff2.png" alt="SO2" onerror="this.src='images/uploads/standoff2.png'"></div></button>
     </section>
 
     <div class="toolbar">
@@ -105,8 +105,8 @@ dialog{border:none;border-radius:16px;padding:0;max-width:960px;width:92vw;backg
         <option value="">All Categories</option>
         <option>PUBG Account</option>
         <option>ML account</option>
-        <option>steam account</option>
-        <option>standoff 2 account</option>
+        <option>Steam account</option>
+        <option>Standoff 2 account</option>
       </select>
     </div>
   </section>
@@ -115,7 +115,7 @@ dialog{border:none;border-radius:16px;padding:0;max-width:960px;width:92vw;backg
 
   <section id="about" style="padding:10px 0 24px">
     <h2 style="font-family:Oxanium; font-size:18px; margin-bottom:8px">About</h2>
-    <p style="color:var(--muted); max-width:760px">Digital-only listings. Each card includes Messenger and phone.</p>
+    <p style="color:var(--muted); max-width:760px">Баталгаат найдвартай үйлчилгээ.</p>
   </section>
 </main>
 
@@ -123,10 +123,10 @@ dialog{border:none;border-radius:16px;padding:0;max-width:960px;width:92vw;backg
   <div class="container">
     <div id="contact" style="display:flex; gap:12px; flex-wrap:wrap; align-items:center">
       <strong>Contact:</strong>
-      <a class="badge" href="https://m.me/360j" target="_blank" rel="noopener">Message on Messenger</a>
-      <a class="badge" href="tel:+97600000000">+97600000000</a>
+      <a class="badge" href="https://www.facebook.com/yourCrushkk" target="_blank" rel="noopener">Message on Messenger</a>
+      <a class="badge" href="tel:+97672028804">+97672028804</a>
     </div>
-    <p style="margin-top:12px">© <span id="year"></span> 360j. All rights reserved.</p>
+    <p style="margin-top:12px">© <span id="year"></span> 360. All rights reserved.</p>
   </div>
 </footer>
 
@@ -139,7 +139,7 @@ const cat = document.querySelector('#category');
 function badge(text){return `<span class="badge">${text}</span>`}
 function cardTemplate(item){
   const img0 = (item.images && item.images[0]) ? item.images[0] : '';
-  const msgr = (item.contact && item.contact.messenger) ? item.contact.messenger : '360j';
+  const msgr = (item.contact && item.contact.messenger) ? item.contact.messenger : '360';
   const pid = encodeURIComponent(item.id || '');
   return `
   <article class="card" data-id="${item.id || ''}">
@@ -186,7 +186,7 @@ function openDetail(id){
   document.getElementById('mPrice').textContent = item.price || '';
   document.getElementById('mInfo').innerHTML = `<div><span>Category</span><div>${item.category || ''}</div></div><div><span>ID</span><div>${item.id || ''}</div></div><div><span>Login Method</span><div>${item.login_method || ''}</div></div>`;
   const ref = encodeURIComponent(item.id || '');
-  document.getElementById('mMsgr').href = `https://m.me/360j?ref=${ref}`;
+  document.getElementById('mMsgr').href = `https://m.me/360?ref=${ref}`;
   const phone = document.getElementById('mPhone'); phone.href = `tel:+97600000000`; phone.textContent = `Call +97600000000`;
   const slides = document.getElementById('mSlides'); const dots = document.getElementById('mDots'); let index = 0;
   slides.innerHTML = (item.images || []).map(src=>`<div class="slide"><img src="${src}" alt="${item.title || ''}"></div>`).join('');
